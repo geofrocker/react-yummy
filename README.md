@@ -1,4 +1,5 @@
 # Yummy-Recipes web app with PURE React
+You can access the the redux version from here https://github.com/geofrocker/redux-yummy
 [![Build Status](https://travis-ci.org/geofrocker/react-yummy.svg?branch=master)](https://travis-ci.org/geofrocker/react-yummy)
 [![Coverage Status](https://coveralls.io/repos/github/geofrocker/react-yummy/badge.svg?branch=master)](https://coveralls.io/github/geofrocker/react-yummy?branch=master)
 ## Description
