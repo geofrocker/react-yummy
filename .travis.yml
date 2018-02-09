@@ -14,4 +14,4 @@ install:
 # command to run tests
 script:
     - npm test --coverage
-after_success:  "cat ./node_modules/coveralls/bin/coveralls.js"
+after_script: "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
