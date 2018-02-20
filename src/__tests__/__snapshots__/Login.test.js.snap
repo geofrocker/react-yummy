@@ -1,193 +1,199 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`login component make sure the username is valid 1`] = `
-<div
-  className="Login"
->
-  <h1>
-    Please sign in
-  </h1>
-  <div />
+<Login>
   <div
-    className="jumbotron col-xs-11"
+    className="Login"
   >
-    <form
-      id="login-form"
-      method="POST"
-      onSubmit={[Function]}
+    <h1>
+      Please sign in
+    </h1>
+    <div />
+    <div
+      className="jumbotron col-xs-11"
     >
-      <div
-        className="form-group"
+      <form
+        id="login-form"
+        method="POST"
+        onSubmit={[Function]}
       >
+        <div
+          className="form-group"
+        >
+          <input
+            className="form-control"
+            id="username"
+            onChange={[Function]}
+            placeholder="Username"
+            required={true}
+            type="text"
+            value="geofrocker@gmail.com"
+          />
+        </div>
+        <div
+          className="form-group"
+        >
+          <input
+            className="form-control"
+            id="password"
+            onChange={[Function]}
+            placeholder="Password"
+            required={true}
+            type="password"
+            value="psalms"
+          />
+        </div>
         <input
-          className="form-control"
-          id="username"
-          onChange={[Function]}
-          placeholder="Username"
-          required={true}
-          type="text"
-          value="geofrocker@gmail.com"
+          className="btn btn-primary pull-right"
+          type="submit"
+          value="Login"
         />
-      </div>
-      <div
-        className="form-group"
-      >
-        <input
-          className="form-control"
-          id="password"
-          onChange={[Function]}
-          placeholder="Password"
-          required={true}
-          type="password"
-          value="psalms"
-        />
-      </div>
-      <input
-        className="btn btn-primary pull-right"
-        type="submit"
-        value="Login"
-      />
-      <center>
-        <p>
-          or
-        </p>
-        <p>
-          <a
-            href="/register"
-          >
-            Click here to register
-          </a>
-        </p>
-      </center>
-    </form>
+        <center>
+          <p>
+            or
+          </p>
+          <p>
+            <a
+              href="/register"
+            >
+              Click here to register
+            </a>
+          </p>
+        </center>
+      </form>
+    </div>
   </div>
-</div>
+</Login>
 `;
 
 exports[`login component render the two inputs and hides password 1`] = `
-<div
-  className="Login"
->
-  <h1>
-    Please sign in
-  </h1>
-  <div />
+<Login>
   <div
-    className="jumbotron col-xs-11"
+    className="Login"
   >
-    <form
-      id="login-form"
-      method="POST"
-      onSubmit={[Function]}
+    <h1>
+      Please sign in
+    </h1>
+    <div />
+    <div
+      className="jumbotron col-xs-11"
     >
-      <div
-        className="form-group"
+      <form
+        id="login-form"
+        method="POST"
+        onSubmit={[Function]}
       >
+        <div
+          className="form-group"
+        >
+          <input
+            className="form-control"
+            id="username"
+            onChange={[Function]}
+            placeholder="Username"
+            required={true}
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          className="form-group"
+        >
+          <input
+            className="form-control"
+            id="password"
+            onChange={[Function]}
+            placeholder="Password"
+            required={true}
+            type="password"
+            value="psalms"
+          />
+        </div>
         <input
-          className="form-control"
-          id="username"
-          onChange={[Function]}
-          placeholder="Username"
-          required={true}
-          type="text"
-          value=""
+          className="btn btn-primary pull-right"
+          type="submit"
+          value="Login"
         />
-      </div>
-      <div
-        className="form-group"
-      >
-        <input
-          className="form-control"
-          id="password"
-          onChange={[Function]}
-          placeholder="Password"
-          required={true}
-          type="password"
-          value="psalms"
-        />
-      </div>
-      <input
-        className="btn btn-primary pull-right"
-        type="submit"
-        value="Login"
-      />
-      <center>
-        <p>
-          or
-        </p>
-        <p>
-          <a
-            href="/register"
-          >
-            Click here to register
-          </a>
-        </p>
-      </center>
-    </form>
+        <center>
+          <p>
+            or
+          </p>
+          <p>
+            <a
+              href="/register"
+            >
+              Click here to register
+            </a>
+          </p>
+        </center>
+      </form>
+    </div>
   </div>
-</div>
+</Login>
 `;
 
 exports[`login component renders the sign in form and submit data 1`] = `
-<div
-  className="Login"
->
-  <h1>
-    Please sign in
-  </h1>
-  <div />
+<Login>
   <div
-    className="jumbotron col-xs-11"
+    className="Login"
   >
-    <form
-      id="login-form"
-      method="POST"
-      onSubmit={[Function]}
+    <h1>
+      Please sign in
+    </h1>
+    <div />
+    <div
+      className="jumbotron col-xs-11"
     >
-      <div
-        className="form-group"
+      <form
+        id="login-form"
+        method="POST"
+        onSubmit={[Function]}
       >
+        <div
+          className="form-group"
+        >
+          <input
+            className="form-control"
+            id="username"
+            onChange={[Function]}
+            placeholder="Username"
+            required={true}
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          className="form-group"
+        >
+          <input
+            className="form-control"
+            id="password"
+            onChange={[Function]}
+            placeholder="Password"
+            required={true}
+            type="password"
+            value="psalms"
+          />
+        </div>
         <input
-          className="form-control"
-          id="username"
-          onChange={[Function]}
-          placeholder="Username"
-          required={true}
-          type="text"
-          value=""
+          className="btn btn-primary pull-right"
+          type="submit"
+          value="Login"
         />
-      </div>
-      <div
-        className="form-group"
-      >
-        <input
-          className="form-control"
-          id="password"
-          onChange={[Function]}
-          placeholder="Password"
-          required={true}
-          type="password"
-          value="psalms"
-        />
-      </div>
-      <input
-        className="btn btn-primary pull-right"
-        type="submit"
-        value="Login"
-      />
-      <center>
-        <p>
-          or
-        </p>
-        <p>
-          <a
-            href="/register"
-          >
-            Click here to register
-          </a>
-        </p>
-      </center>
-    </form>
+        <center>
+          <p>
+            or
+          </p>
+          <p>
+            <a
+              href="/register"
+            >
+              Click here to register
+            </a>
+          </p>
+        </center>
+      </form>
+    </div>
   </div>
-</div>
+</Login>
 `;

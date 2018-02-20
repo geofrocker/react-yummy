@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import  url, { http } from './config'
 
 const Categories = props =>
-    <option>{props.cat_name}</option>
+    <option value={props.cat_id}>{props.cat_name}</option>
 
 const Status = props =>
     <option>{props.status}</option>

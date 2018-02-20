@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import Since from 'react-since';
 import  url, { http } from './config'
 
-
+/*
+Display recipes
+*/
 const Recipe = props =>
     <div className="jumbotron">
         <h3>{props.title}</h3>
-        <em>Added by <span className="fa fa-user"></span> { props.created_by } about <span className="fa fa-calendar"></span> <Since date={ props.create_date } /> | Category: { props.category}
-        <a href={'/recipe/' + props.recipe_id} className="btn btn-primary pull-right">Review</a>
+        <em>Added by <span className="fa fa-user"></span> { props.created_by } about <span className="fa fa-calendar"></span> <Since date={ props.create_date } /> | Category: {props.category_rel}
+        <a href={'/recipe/' + props.recipe_id} id="review" className="btn btn-primary pull-right">Review</a>
         </em>
 
         <div>
@@ -39,9 +41,14 @@ class Home extends Component {
             pages:null
         };
       }
-
+    /*
+    Load recipes before the component mounts
+    */
     componentDidMount(){
-        return http.get(this.state.url)
+        this.getRecipes()
+    }
+
+    getRecipes =()=>{http.get(this.state.url)
         .then((response)=>{
             console.log(response)
             this.setState({
@@ -49,6 +56,7 @@ class Home extends Component {
             showMessage:false,
             pages: response.data.total_pages
             });
+            console.log(this.state.data)
             if(response.data.previous_page === 'Null'){
                 this.setState({
                     disablePrevious: 'page-item disabled',
@@ -77,6 +85,9 @@ class Home extends Component {
         })
 
     }
+    /*
+    Handle the link to the next page from pagination
+    */
     nextPage() {
         if (this.state.next_page)
             return http.get(this.state.next_page)
@@ -119,7 +130,9 @@ class Home extends Component {
             }
         );
     };
-
+    /*
+    Handle the link to the previous page from pagination
+    */
     previousPage() {
         if(this.state.previous_page)
             return http.get(this.state.previous_page)
@@ -161,7 +174,9 @@ class Home extends Component {
             }
         );
     };
-    
+    /*
+    Handle the search functionality
+    */
     handleSearch = (event) => {
         event.preventDefault();
         this.setState({
@@ -170,6 +185,9 @@ class Home extends Component {
         });
         if(this.state.q){
             let localurl = url +'?q='+this.state.q+'&page='+this.state.page
+            /*
+            Make axios api call
+            */
             return http.get(localurl)
             .then((response)=>{
                 this.setState({
@@ -217,10 +235,10 @@ class Home extends Component {
            <div className="col-xs-11 col-sm-3 pull-right">
                 <ul className="pagination">
                     <li className={disablePrevious}>
-                    <a className="page-link" onClick={() => this.previousPage()}>Previous</a>
+                    <a className="page-link" id="prev" onClick={() => this.previousPage()}>Previous</a>
                     </li>
                     <li className={disableNext}>
-                    <a className="page-link" onClick={() => this.nextPage()}>Next</a>
+                    <a className="page-link" id="next" onClick={() => this.nextPage()}>Next</a>
                     <a className="page-link">Showing {page} of {pages}</a>
                     </li>
                     

@@ -5,8 +5,8 @@ const Recipe = (props) => {
         <tr>
           <td>{props.id}</td>
           <td>{props.title}</td>
-          <td>{props.category}</td>
-          <td>{props.created_by}</td>
+          <td>{props.category_rel}</td>
+          <td>{props.author}</td>
           <td>{props.status}</td>
           <td>{props.create_date}</td>
           <td><a href={'/edit_recipe/' + props.recipe_id} className="btn btn-default pull-right"> Edit</a></td>

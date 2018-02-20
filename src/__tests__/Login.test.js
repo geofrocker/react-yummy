@@ -1,3 +1,4 @@
+import 'jsdom-global/register';
 import React from 'react';
 import { MemoryRouter } from 'react-router-dom';
 import { shallow, mount } from 'enzyme';
@@ -5,7 +6,7 @@ import toJson from 'enzyme-to-json';
 import Login from '../components/login';
 
 describe('login component', () => {
-    const wrapper = shallow(<Login/>);
+    const wrapper = mount(<Login/>);
     const preventDefault = jest.fn();
     it('renders the Login class', () => {   
         expect(wrapper.find(".Login")).toHaveLength(1);

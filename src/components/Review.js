@@ -6,7 +6,7 @@ const Reviews = props =>
 <div className="col-sm-12">
     <blockquote>
         <p>{props.content}.</p>
-        <footer>By {props.created_by} about <cite title="Time"><Since date={ props.create_date }/></cite></footer>
+        <footer>By {props.author} about <cite title="Time"><Since date={ props.create_date }/></cite></footer>
     </blockquote>
 </div>;
     
@@ -137,7 +137,7 @@ class Review extends Component {
                 }
                 <div className="jumbotron">
                     <h3>{recipeData.title}<a href="/" className="btn btn-primary pull-right">Go back</a></h3>
-                    <em>Added by <span className="fa fa-user"></span> { recipeData.created_by } about <span className="fa fa-calendar"></span> <Since date={ recipeData.create_date } /></em>
+                    <em>Added by <span className="fa fa-user"></span> { recipeData.author} about <span className="fa fa-calendar"></span> <Since date={ recipeData.create_date } /></em>
                     <hr/>
                     <div>
                         <h3>Ingredients</h3>
