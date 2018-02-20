@@ -13,5 +13,5 @@ install:
   - npm install
 # command to run tests
 script:
-  - npm test --coverage
+  - yarn test -- --coverage
 after_script: "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
