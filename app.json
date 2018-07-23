@@ -1,0 +1,21 @@
+{
+  "name": "react-yummy",
+  "description": "This is to enable reviews on heroku",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
